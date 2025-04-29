@@ -41,6 +41,13 @@
             display: flex;
             flex-direction: column;
         }
+        .form a {
+            color: var(--hospital-green);
+            font-size: var(--sm);
+            text-align: center;
+            text-decoration: none;
+            margin-bottom: 52px;
+        }
         .label{
             font-size: var(--sm);
             font-weight: bold;
@@ -54,6 +61,10 @@
             font-size: var(--md);
             padding: 6px;
             margin-bottom: 12px;
+        }
+        .input-email {
+            margin-bottom: 22px;
+
         }
         .primary-button {
             background: var(--hospital-green);
@@ -71,10 +82,10 @@
             margin-bottom: 30px;
         }
         .secondary-button {
-            background: var(--hospital-green);
+            background: var(--white);
             border-radius: 8px;
-            border: none;
-            color: var(--white);
+            border: 1px solid var(--hospital-green);
+            color: var(--hospital-green);
             width: 100%;
             cursor: pointer;
             font-size: var(--md);
@@ -85,6 +96,9 @@
             .logo {
                 display: block;
             }
+            .secondary-button {
+                margin-top: 56px;
+            }
         }
     </style>
 </head>
@@ -94,13 +108,13 @@
             <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
 
             <form action="/" class="form">
-                <label for="email" class="label">Email Address</label>
+                <label for="email" class="label">Email address</label>
                 <input type="text" id="email" placeholder="Ingresa tu email" class="input input-email">
 
                 <label for="password" class="label">Password</label>
                 <input type="password" id="password" placeholder="*********" class="input input-password">
 
-                <input type="submit" value="confirm" class="primary-button login-button">
+                <input type="submit" value="Confirm" class="primary-button login-button">
                 <a href="/">Forgot my password</a>
             </form>
 
